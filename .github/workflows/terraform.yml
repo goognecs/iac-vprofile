@@ -3,9 +3,7 @@ name: "Vprofile IAC"
 on:
   workflow_dispatch: {}
   push:
-    branches:
-      - main
-      - stage
+    branches: ["stage", "main"]
     paths:  
       - terraform/**
   pull_request:
